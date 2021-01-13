@@ -1,4 +1,41 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+    color:white;
+    font-family: Arial, sans-serif;}
 
+h1 {
+    color:grey;
+    font: Verdana, sans-serif;
+    }
 
+.maindiv {
+    background-color:white;
+    color:black;
+    width:300px;
+    padding:20px;
+    border-radius:25px;
+    margin:0 auto;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100px;
+  height: 5px;
+  background: #d3d3d3;
+  outline: none;
+  border-radius:2px;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: all ease-in 0.25s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background: #0056D2;
+  cursor: pointer;
+}
