@@ -2,7 +2,7 @@
 function compute() {
     var principal = document.getElementById("principal").value;
     // check if the amount is positive, otherwise throw an error and stop.
-    if (principal < 1) {
+    if (principal < 1 || principal == "") {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
         return false;

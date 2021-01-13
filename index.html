@@ -7,12 +7,17 @@
     </head>
     <body>
         <div class="maindiv">
-            <h1>Simple Interest Calculator</h1>
-
-            Amount <input required type="number" min="1" id="principal">  <br/>
-            Interest Rate <input type="range" class="slider" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="update()"><span id="demo" name="demo">10.25%</span><br/>
-            <label for="years">No. of Years</label>
-            <select name="years" id="years">
+            <h1 class="h1">Simple Interest Calculator</h1>
+            <table>
+            <tr>
+            <td>Amount</td><td><input required type="number" min="1" id="principal"></td>
+            </tr>
+            <br/>
+            <tr><td>Interest Rate</td><td><input type="range" class="slider" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="update()"><span id="demo" name="demo">10.25%</span></td></tr>
+        <tr>
+            <td><label for="years">No. of Years</label></td>
+            <td>
+              <select name="years" id="years">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -23,10 +28,14 @@
               <option value="8">8</option>
               <option value="9">9</option>
               <option value="10">10</option>              
-            </select> 
-            <br/>
-        <button onclick="compute()">Compute Interest</button><br>
-        <span id="result"></span>
+            </select>
+            </td>
+        </tr>
+        <tr>
+        <td><button onclick="compute()">Compute Interest</button></td>
+        <td><span id="result"></span></td>
+        </tr>
+        </table>
         <footer>&#169;Everyone Can Get Rich</footer>
         </div>
     </body>

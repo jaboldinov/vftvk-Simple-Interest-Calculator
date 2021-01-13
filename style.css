@@ -6,6 +6,7 @@ body {
 h1 {
     color:grey;
     font: Verdana, sans-serif;
+    text-align: center;
     }
 
 .maindiv {
@@ -19,7 +20,7 @@ h1 {
 
 .slider {
   -webkit-appearance: none;
-  width: 100px;
+  width: 110px;
   height: 5px;
   background: #d3d3d3;
   outline: none;
